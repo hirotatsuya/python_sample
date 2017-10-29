@@ -1,9 +1,8 @@
-python bitflyer
----
+# python bitflyer
 
 ## Requirements
-- pyenv 1.1.3
 - python 3.6.2
+- pyenv 1.1.3
 - pip 9.0.1
 
 ## Usage(python)
