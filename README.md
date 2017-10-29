@@ -1,4 +1,4 @@
-# Python study
+python bitflyer
 ---
 
 ## Requirements
