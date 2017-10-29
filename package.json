@@ -1,0 +1,11 @@
+{
+  "name": "python_sample",
+  "version": "1.0.0",
+  "description": "python study",
+  "main": "index.js",
+  "scripts": {
+    "code": "code ../python_sample"
+  },
+  "author": "hirotatsu",
+  "license": "ISC"
+}

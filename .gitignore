@@ -1,0 +1,9 @@
+.vscode
+
+# 設定ファイルのignore
+bitflyer/config/bitflyer_config.py
+bitflyer/config/__pycache__/
+
+# どうでもいい系
+study
+bitflyer/__pycache__
