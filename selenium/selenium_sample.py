@@ -1,3 +1,4 @@
+# chromedriver install: https://sites.google.com/a/chromium.org/chromedriver/downloads
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
