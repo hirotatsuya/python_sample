@@ -5,5 +5,5 @@ bitflyer/config/bitflyer_config.py
 bitflyer/config/__pycache__/
 
 # どうでもいい系
-study
 bitflyer/__pycache__
+scraping/images
