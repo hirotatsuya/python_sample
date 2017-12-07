@@ -83,4 +83,6 @@ def get_images_by_instagram():
 
 # メイン
 if __name__ == "__main__":
+
+  # get_images_by_instagram関数の実行
   get_images_by_instagram()
