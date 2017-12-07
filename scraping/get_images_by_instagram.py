@@ -13,8 +13,9 @@ import json # JSON形式に変換
 import requests # urlアクセス
 from bs4 import BeautifulSoup # スクレイピング
 
-# instagramのIDを指定して画像を取得する関数
+# instagramのIDを指定して画像をスクレイピングする関数
 def get_images_by_instagram():
+
   # 実行時引数からtarget_instagram_idを取得
   target_instagram_id = sys.argv[1]
 
@@ -83,4 +84,6 @@ def get_images_by_instagram():
 
 # メイン
 if __name__ == "__main__":
+
+  # get_images_by_instagram関数の実行
   get_images_by_instagram()
