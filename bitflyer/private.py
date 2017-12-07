@@ -42,3 +42,20 @@ def get_balance_api():
 
 # response = get_balance_api()
 # print(response)
+
+def get_private_api(value):
+  endpoint = "https://api.bitflyer.jp"
+  method = "GET"
+  path = "/v1/me/getbalance"
+  timestamp = str(time.time())
+  text = timestamp + method + path
+  sign = hmac.new(api_secret, text.encode('utf-8'), hashlib.sha256).hexdigest()
+  headers_info = {
+    'ACCESS-KEY': api_key,
+    'ACCESS-TIMESTAMP': timestamp,
+    'ACCESS-SIGN': sign,
+    'Content-Type': 'application/json'
+  }
+  response = requests.get(endpoint + path, headers=headers_info)
+  response_text = response.text
+  return response_text
