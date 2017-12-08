@@ -8,6 +8,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 picture_category_num = 10
 feature_category_num = 512
 
+# image surf
 images = glob('./*.jpg')
 alldescriptors = []
 for im in images:
@@ -15,10 +16,12 @@ for im in images:
   im = im.astype(np.uint8)
   alldescriptors.append(surf.surf(im, descriptor_only=True))
 
+# image surf -> basic feature
 concatenated = np.concatenate(alldescriptors)
 km = KMeans(feature_category_num)
 km.fit(concatenated)
 
+# image surf and basic feature -> features
 features = []
 for d in alldescriptors:
   c = km.predict(d)
