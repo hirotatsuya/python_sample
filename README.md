@@ -4,12 +4,20 @@
 - python 3.6.2
 - pyenv 1.1.3
 - pip 9.0.1
+- pipenv 9.0.0
+
+## First
+- pipenvのインストール
+
+```
+pip install pipenv
+```
 
 ## Usage(python)
 - pythonコードの実行
 
 ```
-python (file_name)
+python (file_name).py
 ```
 
 ## Usage(pyenv)
@@ -93,3 +101,23 @@ pip list
 ```
 pip uninstall (target)
 ```
+
+## Usage(pipenv)
+- パッケージのインストール
+
+```
+pipenv install
+```
+
+- 開発環境のみにパッケージをインストール
+
+```
+pipenv install --dev (package)
+```
+
+- 仮想環境でpythonの実行
+
+```
+pipenv run python (file_name).py
+```
+
