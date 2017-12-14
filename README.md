@@ -13,6 +13,12 @@
 pip install pipenv
 ```
 
+- phantomjsとchromedriverのインストール
+
+```
+yarn
+```
+
 ## Usage(python)
 - pythonコードの実行
 
