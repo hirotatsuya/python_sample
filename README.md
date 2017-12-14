@@ -126,4 +126,3 @@ pipenv install --dev (package)
 ```
 pipenv run python (file_name).py
 ```
-
