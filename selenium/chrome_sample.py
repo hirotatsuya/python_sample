@@ -1,8 +1,11 @@
 # chromedriver install: https://sites.google.com/a/chromium.org/chromedriver/downloads
 from selenium import webdriver
 
-# chromedriver_path = './node_modules/chromedriver/bin/chromedriver'
-chromedriver_path = './chromedriver'
+# windowsの場合
+# chromedriver_path = '../node_modules/chromedriver/lib/chromedriver/chromedriver'
+# macの場合
+chromedriver_path = '../node_modules/chromedriver/bin/chromedriver'
+
 driver = webdriver.Chrome(executable_path=chromedriver_path)
 driver.get("http://www.python.org")
 driver.quit()
