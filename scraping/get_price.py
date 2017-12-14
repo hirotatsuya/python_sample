@@ -14,8 +14,10 @@ from selenium import webdriver
 def get_price():
   slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
   target_url = "https://coincheck.com/ja/exchange"
+  phantomjs_path = './phantomjs'
   try:
-    browser = webdriver.Chrome(executable_path='../selenium/chromedriver')
+    # browser = webdriver.Chrome(executable_path='../selenium/chromedriver')
+    browser = webdriver.PhantomJS(executable_path=phantomjs_path)
     browser.get(target_url)
     # time.sleep(3)
     html = browser.page_source
