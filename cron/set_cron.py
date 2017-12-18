@@ -19,8 +19,8 @@ def get_ripple():
 
   target_url = 'https://coincheck.com/ja/exchange'
 
-  phantomjs_path = APP_ROOT + '/node_modules/phantomjs/lib/phantom/bin/phantomjs' # win
-  # phantomjs_path = APP_ROOT + '/node_modules/phantomjs/bin/phantomjs' # mac
+  # phantomjs_path = APP_ROOT + '/node_modules/phantomjs/lib/phantom/bin/phantomjs' # win
+  phantomjs_path = APP_ROOT + '/node_modules/phantomjs/bin/phantomjs' # mac
 
   try:
     browser = webdriver.PhantomJS(executable_path=phantomjs_path)
