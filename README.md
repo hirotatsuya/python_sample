@@ -13,7 +13,20 @@
 pip install pipenv
 ```
 
-- phantomjsとchromedriverのインストール
+- yarnのインストール
+
+```
+npm i -g yarn
+```
+
+## Setup
+- `Pipfile`によりpythonのパッケージのインストール
+
+```
+pip install
+```
+
+- `package.json`によりnodeのパッケージのインストール
 
 ```
 yarn
@@ -112,7 +125,7 @@ pip uninstall (target)
 - パッケージのインストール
 
 ```
-pipenv install
+pipenv install (package)
 ```
 
 - 開発環境のみにパッケージをインストール

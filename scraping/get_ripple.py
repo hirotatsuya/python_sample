@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # ============================================
 #
 # get_ripple.py
@@ -23,9 +22,9 @@ def get_ripple():
 
   # phantomjsのpath
   # windowsの場合
-  # phantomjs_path = '../node_modules/phantomjs/lib/phantom/bin/phantomjs'
+  phantomjs_path = '../node_modules/phantomjs/lib/phantom/bin/phantomjs'
   # macの場合
-  phantomjs_path = '../node_modules/phantomjs/bin/phantomjs'
+  # phantomjs_path = '../node_modules/phantomjs/bin/phantomjs'
 
   try:
     # seleniumによりphantomjsを起動
@@ -38,8 +37,8 @@ def get_ripple():
     source = browser.page_source
 
     # 取得したhtmlをファイル出力
-    # with open('coincheck.html', mode='w', encoding='utf-8') as f:
-    #   f.write(html)
+    with open('coincheck.html', mode='w', encoding='utf-8') as f:
+      f.write(source)
 
     # htmlを解析
     soup = BeautifulSoup(source, 'lxml')
