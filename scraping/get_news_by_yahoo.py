@@ -19,7 +19,7 @@ def get_news_by_yahoo():
   target_url = "https://www.yahoo.co.jp/"
   # Requestsを使って、webから取得
   r = requests.get(target_url)
-  # 要素を抽出
+  # 要素を解析
   soup = BeautifulSoup(r.text, 'lxml')
 
   # HTMLファイルとして保存したい場合はファイルオープンして保存
