@@ -1,9 +1,19 @@
 .vscode
+node_modules
 
 # 設定ファイルのignore
 bitflyer/config/bitflyer_config.py
+
+# __pycache__のignore
+ai/__pycache__
+bitflyer/__pycache__
 bitflyer/config/__pycache__/
+scraping/__pycache__
+selenium/__pycache__
 
 # どうでもいい系
-study
-bitflyer/__pycache__
+scraping/images
+selenium/chromedriver
+
+# phantomjs
+ghostdriver.log

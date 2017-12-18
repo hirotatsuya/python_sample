@@ -1,11 +1,13 @@
 {
   "name": "python_sample",
   "version": "1.0.0",
-  "description": "python study",
+  "description": "python sample",
   "main": "index.js",
-  "scripts": {
-    "code": "code ../python_sample"
-  },
-  "author": "hirotatsu",
-  "license": "ISC"
+  "repository": "https://github.com/hirotatsuya/python_sample.git",
+  "author": "hirotatsu <h1208tatsuya@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^2.33.2",
+    "phantomjs": "^2.1.7"
+  }
 }
