@@ -23,7 +23,7 @@ npm i -g yarn
 - `Pipfile`によりpythonのパッケージのインストール
 
 ```
-pip install
+pipenv install
 ```
 
 - `package.json`によりnodeのパッケージのインストール
