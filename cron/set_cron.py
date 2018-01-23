@@ -30,9 +30,10 @@ def get_ripple():
     #   f.write(html)
     soup = BeautifulSoup(source, 'lxml')
     ripple = soup.find_all(class_=re.compile('currency_desc ng-binding'))[7].text
+    nem = soup.find_all(class_=re.compile('currency_desc ng-binding'))[9].text
   finally:
     browser.quit()
-  message = '*Ripple Price by coincheck*\n`' + ripple + '`'
+  message = '*Ripple Price by coincheck*\n`' + ripple + '`' + '\n*NEM Price by coincheck*\n`' + nem + '`'
   slack.notify(text=message, mrkdwn=True)
 
 if __name__ == '__main__':
