@@ -11,6 +11,11 @@ selenium = "*"
 slackweb = "*"
 "beautifulsoup4" = "*"
 lxml = "*"
+flask = "*"
+<<<<<<< HEAD
+=======
+requests = "*"
+>>>>>>> daf289c3a1f2962d946e4166d9494cbd0b943938
 
 
 [dev-packages]
