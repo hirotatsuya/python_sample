@@ -17,3 +17,6 @@ selenium/chromedriver
 
 # phantomjs
 ghostdriver.log
+
+## その他
+.idea/*
